@@ -1,0 +1,90 @@
+/*______________ reset _____________*/
+
+/*_____________ html _____________*/
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+/*____________ all ______________*/
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+/*_____________ root ___________*/
+
+:root {
+    --primary-clr: hsl(0, 0%, 95%);
+    --secondary-clr: hsl(0, 45%, 45%);
+}
+
+/*_____________ container _________*/
+
+.container {
+    --transition-duration: 0.15;
+    background-color: var(--primary-clr);
+    min-height: 100vh;
+    position: relative;
+    z-index: 0;
+}
+
+/*_____________ block _______*/
+
+.block {
+    display: flex;
+    justify-content: center;
+    --transition: transform calc(var(--transition-duration) * 1s) linear 0ms;
+    min-height: 20vh;
+    transition: var(--transition);
+    border: 0.5rem solid var(--primary-clr);
+    background-color: var(--block-bgclr, var(--secondary-clr));
+    position: relative;
+}
+
+.block:nth-child(2) {
+    background-color: var(--block-bgclr, hsl(120, 34%, 67%));
+}
+
+.block:nth-child(3) {
+    background-color: var(--block-bgclr, hsl(56, 34%, 67%));
+}
+
+.block:nth-child(4) {
+    background-color: var(--block-bgclr, hsl(313, 34%, 67%));
+}
+
+.block:nth-child(5) {
+    background-color: var(--block-bgclr, hsl(29, 34%, 67%));
+}
+
+.block p {
+    font-size: 5rem;
+    color: var(--primary-clr);
+    margin: auto 0;
+    text-align: center;
+}
+
+/*___________ hidden _______*/
+
+.hidden {
+    transform: translateY(-100%);
+    z-index: -1;
+}
+
+/*_________ show _________*/
+
+.show {
+    transform: translateY(0%);
+}
+
+/*__________ front __________*/
+
+.front {
+    z-index: 0;
+}
