@@ -27,7 +27,7 @@ html {
 /*_____________ container _________*/
 
 .container {
-    --transition-duration: 0.15;
+    --transition-duration: 0.9;
     background-color: var(--primary-clr);
     min-height: 100vh;
     position: relative;
@@ -39,7 +39,7 @@ html {
 .block {
     display: flex;
     justify-content: center;
-    --transition: transform calc(var(--transition-duration) * 1s) linear 0ms;
+    --transition: transform calc(var(--transition-duration) * 1s) linear;
     min-height: 20vh;
     transition: var(--transition);
     border: 0.5rem solid var(--primary-clr);

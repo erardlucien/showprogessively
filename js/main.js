@@ -7,7 +7,7 @@ let count = 1
 const max = 5
 let transitionDuration = getComputedStyle(container).getPropertyValue('--transition-duration')
 transitionDuration = parseFloat(transitionDuration) * 1000
-let transitionDelay = 100
+let transitionDelay = 50
 
 function addNewBlockImpl() {
     let block = document.createElement('div')
