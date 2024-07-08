@@ -2,7 +2,6 @@
 
 let container = document.querySelector('.container')
 
-const interval = 500
 let count = 1
 const max = 5
 let transitionDuration = getComputedStyle(container).getPropertyValue('--transition-duration')
@@ -31,11 +30,9 @@ function addNewBlockImpl() {
     ++count
 }
 
-addNewBlockImpl()
-
 let addNewBlock = setInterval(() => {
     addNewBlockImpl()
-    if( count === 6) {
+    if( count === max + 1) {
         clearInterval(addNewBlock)
     }
 }, transitionDelay + transitionDuration);
