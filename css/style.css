@@ -40,7 +40,7 @@ html {
     display: flex;
     justify-content: center;
     --transition: transform calc(var(--transition-duration) * 1s) linear;
-    min-height: 20vh;
+    height: 20vh;
     transition: var(--transition);
     border: 0.5rem solid var(--primary-clr);
     background-color: var(--block-bgclr, var(--secondary-clr));
